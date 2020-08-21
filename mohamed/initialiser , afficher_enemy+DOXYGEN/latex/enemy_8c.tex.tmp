@@ -1,0 +1,58 @@
+\hypertarget{enemy_8c}{}\section{enemy.\+c File Reference}
+\label{enemy_8c}\index{enemy.\+c@{enemy.\+c}}
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+image.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for enemy.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{enemy_8c_adc66ee96c6dcbf9b96ddc1bb12ae5a9b}{initialiser\+\_\+enemy} (\hyperlink{structenemy}{enemy} E)
+\begin{DoxyCompactList}\small\item\em To initialize the enemy E. \end{DoxyCompactList}\item 
+int \hyperlink{enemy_8c_ac2cbfd30373b108e202b2142e58024b0}{afficher\+\_\+enemy} (\hyperlink{structenemy}{enemy} E, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To screen enemy . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{enemy_8c_ac2cbfd30373b108e202b2142e58024b0}\label{enemy_8c_ac2cbfd30373b108e202b2142e58024b0}} 
+\index{enemy.\+c@{enemy.\+c}!afficher\+\_\+enemy@{afficher\+\_\+enemy}}
+\index{afficher\+\_\+enemy@{afficher\+\_\+enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{afficher\+\_\+enemy()}{afficher\_enemy()}}
+{\footnotesize\ttfamily int afficher\+\_\+enemy (\begin{DoxyParamCaption}\item[{\hyperlink{structenemy}{enemy}}]{E,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+To screen enemy . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E} & enemy \\
+\hline
+{\em screen} & the screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enemy_8c_adc66ee96c6dcbf9b96ddc1bb12ae5a9b}\label{enemy_8c_adc66ee96c6dcbf9b96ddc1bb12ae5a9b}} 
+\index{enemy.\+c@{enemy.\+c}!initialiser\+\_\+enemy@{initialiser\+\_\+enemy}}
+\index{initialiser\+\_\+enemy@{initialiser\+\_\+enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection{\texorpdfstring{initialiser\+\_\+enemy()}{initialiser\_enemy()}}
+{\footnotesize\ttfamily void initialiser\+\_\+enemy (\begin{DoxyParamCaption}\item[{\hyperlink{structenemy}{enemy}}]{E }\end{DoxyParamCaption})}
+
+
+
+To initialize the enemy E. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em E} & the enemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}

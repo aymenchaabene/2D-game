@@ -1,0 +1,153 @@
+\hypertarget{IA_8c}{}\section{I\+A.\+c File Reference}
+\label{IA_8c}\index{I\+A.\+c@{I\+A.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}I\+A.\+h\char`\"{}}\newline
+Include dependency graph for I\+A.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{IA_8c_ad8dbdd1cb8166fa8530aa3f7143c5f41}{intialiser} (\hyperlink{structObjet}{Objet} $\ast$perso, \hyperlink{structObjet}{Objet} $\ast$zombie)
+\begin{DoxyCompactList}\small\item\em To initialize the P\+E\+R\+SO perso and the Z\+O\+M\+B\+IE zombie. \end{DoxyCompactList}\item 
+void \hyperlink{IA_8c_a977769899c65d9b22b4a5cbde4c3c74e}{setup} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structObjet}{Objet} $\ast$objet1, \hyperlink{structObjet}{Objet} $\ast$objet2)
+\begin{DoxyCompactList}\small\item\em To setup. \end{DoxyCompactList}\item 
+void \hyperlink{IA_8c_aadda18ab7580865447873b458c422eff}{calculer\+\_\+centre\+\_\+rayon} (\hyperlink{structObjet}{Objet} $\ast$objet1, \hyperlink{structObjet}{Objet} $\ast$objet2)
+\begin{DoxyCompactList}\small\item\em To calculate the radius center. \end{DoxyCompactList}\item 
+float \hyperlink{IA_8c_a6d26d6ae199b28eda68207e97d750518}{calculer\+\_\+distance} (\hyperlink{structObjet}{Objet} $\ast$objet1, \hyperlink{structObjet}{Objet} $\ast$objet2)
+\begin{DoxyCompactList}\small\item\em To calculate the distance. \end{DoxyCompactList}\item 
+int \hyperlink{IA_8c_a5ff7548e046a7ffb8c7924139d8d401f}{verif\+\_\+collision} (\hyperlink{structObjet}{Objet} $\ast$objet1, \hyperlink{structObjet}{Objet} $\ast$objet2, float D1)
+\begin{DoxyCompactList}\small\item\em To check the collision. \end{DoxyCompactList}\item 
+void \hyperlink{IA_8c_a326070ea1c05e146d232d831d8b31add}{deplacement\+\_\+objet} (\hyperlink{structObjet}{Objet} $\ast$\hyperlink{structobjet}{objet}, int $\ast$running)
+\begin{DoxyCompactList}\small\item\em To move the object . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{IA_8c_aadda18ab7580865447873b458c422eff}\label{IA_8c_aadda18ab7580865447873b458c422eff}} 
+\index{I\+A.\+c@{I\+A.\+c}!calculer\+\_\+centre\+\_\+rayon@{calculer\+\_\+centre\+\_\+rayon}}
+\index{calculer\+\_\+centre\+\_\+rayon@{calculer\+\_\+centre\+\_\+rayon}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{calculer\+\_\+centre\+\_\+rayon()}{calculer\_centre\_rayon()}}
+{\footnotesize\ttfamily void calculer\+\_\+centre\+\_\+rayon (\begin{DoxyParamCaption}\item[{\hyperlink{structObjet}{Objet} $\ast$}]{objet1,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{objet2 }\end{DoxyParamCaption})}
+
+
+
+To calculate the radius center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objet1} & the object \\
+\hline
+{\em objet2} & the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{IA_8c_a6d26d6ae199b28eda68207e97d750518}\label{IA_8c_a6d26d6ae199b28eda68207e97d750518}} 
+\index{I\+A.\+c@{I\+A.\+c}!calculer\+\_\+distance@{calculer\+\_\+distance}}
+\index{calculer\+\_\+distance@{calculer\+\_\+distance}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{calculer\+\_\+distance()}{calculer\_distance()}}
+{\footnotesize\ttfamily float calculer\+\_\+distance (\begin{DoxyParamCaption}\item[{\hyperlink{structObjet}{Objet} $\ast$}]{objet1,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{objet2 }\end{DoxyParamCaption})}
+
+
+
+To calculate the distance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objet1} & the object \\
+\hline
+{\em objet2} & the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+D 
+\end{DoxyReturn}
+\mbox{\Hypertarget{IA_8c_a326070ea1c05e146d232d831d8b31add}\label{IA_8c_a326070ea1c05e146d232d831d8b31add}} 
+\index{I\+A.\+c@{I\+A.\+c}!deplacement\+\_\+objet@{deplacement\+\_\+objet}}
+\index{deplacement\+\_\+objet@{deplacement\+\_\+objet}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{deplacement\+\_\+objet()}{deplacement\_objet()}}
+{\footnotesize\ttfamily void deplacement\+\_\+objet (\begin{DoxyParamCaption}\item[{\hyperlink{structObjet}{Objet} $\ast$}]{objet,  }\item[{int $\ast$}]{running }\end{DoxyParamCaption})}
+
+
+
+To move the object . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objet} & the object \\
+\hline
+{\em running} & the running \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{IA_8c_ad8dbdd1cb8166fa8530aa3f7143c5f41}\label{IA_8c_ad8dbdd1cb8166fa8530aa3f7143c5f41}} 
+\index{I\+A.\+c@{I\+A.\+c}!intialiser@{intialiser}}
+\index{intialiser@{intialiser}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{intialiser()}{intialiser()}}
+{\footnotesize\ttfamily void intialiser (\begin{DoxyParamCaption}\item[{\hyperlink{structObjet}{Objet} $\ast$}]{perso,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{zombie }\end{DoxyParamCaption})}
+
+
+
+To initialize the P\+E\+R\+SO perso and the Z\+O\+M\+B\+IE zombie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em perso} & the character \\
+\hline
+{\em zombie} & the zombie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{IA_8c_a977769899c65d9b22b4a5cbde4c3c74e}\label{IA_8c_a977769899c65d9b22b4a5cbde4c3c74e}} 
+\index{I\+A.\+c@{I\+A.\+c}!setup@{setup}}
+\index{setup@{setup}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{objet1,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{objet2 }\end{DoxyParamCaption})}
+
+
+
+To setup. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen \\
+\hline
+{\em objet1} & the object \\
+\hline
+{\em objet2} & the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{IA_8c_a5ff7548e046a7ffb8c7924139d8d401f}\label{IA_8c_a5ff7548e046a7ffb8c7924139d8d401f}} 
+\index{I\+A.\+c@{I\+A.\+c}!verif\+\_\+collision@{verif\+\_\+collision}}
+\index{verif\+\_\+collision@{verif\+\_\+collision}!I\+A.\+c@{I\+A.\+c}}
+\subsubsection{\texorpdfstring{verif\+\_\+collision()}{verif\_collision()}}
+{\footnotesize\ttfamily int verif\+\_\+collision (\begin{DoxyParamCaption}\item[{\hyperlink{structObjet}{Objet} $\ast$}]{objet1,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{objet2,  }\item[{float}]{D1 }\end{DoxyParamCaption})}
+
+
+
+To check the collision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objet1} & the object \\
+\hline
+{\em objet2} & the object \\
+\hline
+{\em D1} & the distance 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+collision 
+\end{DoxyReturn}

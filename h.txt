@@ -1,0 +1,101 @@
+#include <SDL/SDL.h>
+#include <SDL/SDL_image.h>
+#include <SDL/SDL_mixer.h>
+#include <SDL/SDL_ttf.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "enigme.h"
+
+void init_enigme(enigme e[],int n)
+{
+n=10;
+char Q[10],R1[10],R2[10],R3[10];
+int i=0;
+FILE* f=NULL;
+
+f=fopen("file.txt","r");
+while(!feof(f))
+{
+fscanf(f," %s %s %s %s %d ",Q,R1,R2,R3,&e[i].solution);
+printf("%s %s %s %s %d ",Q,R1,R2,R3,e[i].solution);
+e[i].Q=IMG_Load(Q);
+e[i].R1=IMG_Load(R1);
+e[i].R2=IMG_Load(R2);
+e[i].R3=IMG_Load(R3);
+i++;
+
+
+
+}
+fclose(f);
+
+for(i=0;i<n;i++)
+{
+e[i].posQ.x=300;  
+e[i].posQ.y=300; 
+
+e[i].posR1.x=100; 
+e[i].posR1.y=400; 
+
+e[i].posR2.x=300; 
+e[i].posR2.y=400; 
+
+e[i].posR3.x=600; 
+e[i].posR3.y=400; 
+
+}
+
+}
+
+int anul_doublon(int nbr_aleatoire,int tab[],int n)
+{
+   int i;
+   n=10;
+   for(i=0;i<n;i++)
+      if (tab[i]==nbr_aleatoire)
+         return 0;
+   return 1;
+}
+
+int generation_enigme(int tab[],int n)
+{
+	int nbr_aleatoire=-1;
+	do
+{
+   nbr_aleatoire = rand()%10;
+} while(!anul_doublon(nbr_aleatoire,tab,n));
+
+return nbr_aleatoire;
+
+}
+
+
+void affichage_enigme(enigme e[],SDL_Surface *ecran,int tab[],int n)
+{
+	SDL_Event event;
+	int nbr_aleatoire,continuer=1,i=-1;
+	i=generation_enigme(tab,n);
+	i=0;// a retirer
+
+	SDL_BlitSurface(e[i].Q,NULL,ecran,&e[i].posQ);
+	SDL_BlitSurface(e[i].R1,NULL,ecran,&e[i].posR1);
+	SDL_BlitSurface(e[i].R2,NULL,ecran,&e[i].posR2);
+	SDL_BlitSurface(e[i].R3,NULL,ecran,&e[i].posR3);
+
+
+/*SDL_FreeSurface(e[i].Q);
+SDL_FreeSurface(e[i].R1);
+SDL_FreeSurface(e[i].R2);
+SDL_FreeSurface(e[i].R3);*/
+
+
+}
+
+void init_tableau(int tab[],int n)
+{int i;
+	for(i=0;i<n;i++)
+	{
+		tab[i]=-1;
+	}
+}
